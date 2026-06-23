@@ -34,7 +34,12 @@ Alertmanager + Grafana, rules unit-tested with `promtool`), a Compose voting
 app with live E2E smoke tests, **Ansible** roles tested with Molecule, and a
 **custom GitHub Action**. Each project has its own path-filtered pipeline.
 
+#### 🧰 Tools
+`Python` · `STAC / Sentinel-2` · `xarray · rasterio · GDAL` · `PyTorch / TorchGeo` · `Spark · Kafka · DuckDB` · `dbt` · `Docker · Kubernetes · Helm` · `Terraform` · `Argo CD` · `Prometheus · Grafana` · `GitHub Actions`
+
 ---
 
 📍 Cameroon-focused where it counts · 🧪 tested cores · 🔁 reproducible ·
 🔗 [Data Science](https://github.com/mbongowo/Data-science-Portfolio) · [DevOps](https://github.com/mbongowo/DEVOPS)
+
+📫 [mbuhjoe48@gmail.com](mailto:mbuhjoe48@gmail.com)
