@@ -1,33 +1,40 @@
 ### Hi, I'm Joseph Mbuh 👋
 
-I work in data science across two areas: **spatial / remote sensing** (Python
-geospatial pipelines, GeoAI, reproducible Earth-observation analysis) and
-**large-scale "big data"** analytics (streaming, distributed processing, the
-modern data stack). I care more about whether someone else can reproduce a result
-from a clean clone than about how the notebook looked the day I wrote it.
+**Spatial data scientist & DevOps engineer.** I build remote-sensing and
+big-data pipelines — and the CI/CD, IaC, and Kubernetes plumbing that ships
+them. My one rule: a result should reproduce from a clean clone, not just on
+the machine it was written on.
 
-**Portfolio:** [Data-science-Portfolio](https://github.com/mbongowo/Data-science-Portfolio)
-— 14 projects in two tracks, each with its own environment, hand-derived
-known-answer tests, CI, and docs. Every project ships a one-command reproducible
-demo.
+---
 
-**🛰️ Live app — [EO Explorer](https://data-science-portfolio-kpnqhpxmfzgwpgwbxkejql.streamlit.app/):**
-draw an area, pick a date and a spectral index, and see live Sentinel-2 rendered
-on a map (the index maths is reused from the `eo-monitor` package).
+#### ▶ Live apps (free tier — first load wakes the dyno)
 
-[![EO Explorer](https://raw.githubusercontent.com/mbongowo/Data-science-Portfolio/main/spatial/eo-explorer-app/docs/screenshot.png)](https://data-science-portfolio-kpnqhpxmfzgwpgwbxkejql.streamlit.app/)
+| App | What it does |
+|-----|--------------|
+| 🛰️ [EO Explorer](https://data-science-portfolio-kpnqhpxmfzgwpgwbxkejql.streamlit.app/) | Draw an area, pick a date + spectral index, see live Sentinel-2 on a map |
+| 🏥 [Clinic-access dashboard](https://mbongowo-dat-spatial04-leafmap-dashboardappstreamlit-app-mclndk.streamlit.app/) | Which Cameroon towns are farthest from a health facility? (real OSM data) |
+| 🌱 [Crop Recommender](https://mbongowo-data-s-non-spatial04-ml-web-appappstreamlit-app-l5yxjk.streamlit.app/) | Soil + climate → ranked crop with confidences (pure-numpy softmax) |
+| 📚 [Portfolio RAG](https://data-science-portfolio-fexfuaen4zdrzgpmu53nhs.streamlit.app/) | Ask questions across my projects; cited TF-IDF retrieval, no API key |
 
-**Spatial track**
-- **eo-monitor** — Sentinel-2 from STAC to spectral indices, anomaly maps, and cloud-optimised GeoTIFFs, one command, no manual downloads.
-- **access-to-care** — travel time to the nearest clinic over a road network, weighted by population, built around Cameroon.
-- **spatial-hotspots** — spatial autocorrelation and cluster maps (Moran's I, LISA, Getis-Ord Gi\*), with the interpretation and the limits written out.
-- **geoai-segmentation** — a segmentation model set up so a reported metric reproduces from the committed seed and config, with a model card.
-- **disturbance-detection** — NDVI time series, harmonic decomposition, and breakpoint detection of when and where the land changed.
-- **eo-explorer-app** — the deployed interactive web app above, reusing the index code from `eo-monitor`.
+---
 
-**Big-data track**
-- **clickstream-pipeline** (Kafka + Spark streaming), **log-anomaly** (Spark + anomaly detection on labelled logs), **als-recommender** (Spark MLlib), **sentiment-scale** (Spark + NLP), **tlc-analytics** (a Spark/DuckDB/warehouse engine bake-off), **dbt-modern-stack** (dbt + orchestration), **crypto-backtest** (a no-look-ahead backtest), **graph-analysis** (PageRank / communities / triangles at scale).
+#### 📊 [Data-Science Portfolio](https://github.com/mbongowo/Data-science-Portfolio)
+24 projects across a **spatial** track (STAC/Sentinel-2 pipelines, GeoAI,
+spatial stats, change detection) and a **big-data** track (Kafka/Spark
+streaming, dbt, recommenders, graph analytics) — plus 10 technique-replication
+builds. ~800 known-answer tests run in CI; every project ships a one-command
+reproducible demo.
 
-Each project's pure-numerical core is unit-tested and runs in CI (~800 known-answer
-tests across the repo); the full data and compute pipelines are documented per
-project.
+#### ⚙️ [DevOps Portfolio](https://github.com/mbongowo/DEVOPS)
+8 hands-on projects walking an app from source to a monitored, GitOps-managed
+deployment: **CI/CD** (Spring PetClinic → GHCR → gated deploy), **Terraform**
+(modular free-tier Azure), **Helm** (Online Boutique, 11 microservices),
+**Argo CD** App-of-Apps GitOps, an **observability stack** (Prometheus +
+Alertmanager + Grafana, rules unit-tested with `promtool`), a Compose voting
+app with live E2E smoke tests, **Ansible** roles tested with Molecule, and a
+**custom GitHub Action**. Each project has its own path-filtered pipeline.
+
+---
+
+📍 Cameroon-focused where it counts · 🧪 tested cores · 🔁 reproducible ·
+🔗 [Data Science](https://github.com/mbongowo/Data-science-Portfolio) · [DevOps](https://github.com/mbongowo/DEVOPS)
